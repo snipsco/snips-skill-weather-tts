@@ -42,7 +42,6 @@ sudo systemctl start snips-skill-server
 ```
 
 ## How to trigger
-You're ready to go:
 
 `Hey Snips`
 
