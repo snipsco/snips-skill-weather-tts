@@ -5,7 +5,7 @@ VENV=venv
 if [ ! -d "$VENV" ]
 then
 
-    PYTHON=`which python2`
+    PYTHON=`which python3`
 
     if [ ! -f $PYTHON ]
     then
@@ -17,4 +17,4 @@ fi
 
 . $VENV/bin/activate
 
-pip install -r requirements.txt
+pip3 install -r requirements.txt
