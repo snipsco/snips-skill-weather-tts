@@ -7,16 +7,7 @@ This action subscribes to all intents and only parses the weather intents. The r
 
 This action won't give you a weather result, check [snips-skill-owm](https://github.com/snipsco/snips-skill-owm) for this.
 
-## Setup with APT
-
-The APT package contains the weather assistant and the action.
-The assistant will be placed in `/usr/share/snips/assistant` and the action in `/var/lib/snips/skill/snips-skill-weather-tts`
-The virtual environment will also be created for you and the `snips-skill-server` will be restarted.
-
-`sudo apt-get install snips-platform-demo`
-
-
-## Setup without APT
+## Skill Setup
 ### Prerequisites
 
 You'll need to add the Weather english skill in your assistant. It's available on [Snips' console](https://console.snips.ai)
@@ -40,6 +31,19 @@ cd /var/lib/snips/skills/snips-skill-weather-tts/
 sh setup.sh
 sudo systemctl start snips-skill-server
 ```
+
+## Setup with APT
+
+The APT package contains only the weather assistant.
+The assistant will be placed in `/usr/share/snips/assistant`.
+
+`sudo apt-get install snips-platform-demo`
+
+The skill need to be installed manually.
+
+## Full demo installation with SAM
+
+`sam install demo` install the assistants and this skill on your device.
 
 ## How to trigger
 
